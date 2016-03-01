@@ -1,0 +1,24 @@
+{
+  "name": "mocha-react-templates-compiler",
+  "version": "1.0.0",
+  "description": "react-templates compiler for mocha test framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/talpor/mocha-react-templates-compiler.git"
+  },
+  "keywords": [
+    "mocha",
+    "react-templates",
+    "compiler"
+  ],
+  "author": "Max Rondon",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/talpor/mocha-react-templates-compiler/issues"
+  },
+  "homepage": "https://github.com/talpor/mocha-react-templates-compiler#readme",
+}
