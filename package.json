@@ -21,4 +21,7 @@
     "url": "https://github.com/talpor/mocha-react-templates-compiler/issues"
   },
   "homepage": "https://github.com/talpor/mocha-react-templates-compiler#readme",
+  "dependencies": {
+    "react-templates": "^0.1.21"
+  }
 }
