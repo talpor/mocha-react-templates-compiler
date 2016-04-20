@@ -1,26 +1,26 @@
-import fs from 'fs'
-import reactTemplates from 'react-templates/src/reactTemplates'
+import fs from 'fs';
+import reactTemplates from 'react-templates/src/reactTemplates';
 
-const babel = require('babel-core')
-const orig = require.extensions['.js']
+const babel = require('babel-core');
+const orig = require.extensions['.js'];
 
 const loaderCreator = opts => (module, filename) => {
   if (filename.indexOf('node_modules') >= 0)
-    return orig(module, filename)
+    return orig(module, filename);
 
-  const content = fs.readFileSync(filename, 'utf-8')
-  const template = reactTemplates.convertTemplateToReact(content, opts)
+  const content = fs.readFileSync(filename, 'utf-8');
+  const template = reactTemplates.convertTemplateToReact(content, opts);
   const code = babel.transform(template, {
     presets: ['es2015'],
     ast: false
-  }).code
+  }).code;
 
-  return module._compile(code, filename)
-}
+  return module._compile(code, filename);
+};
 
 export default opts => {
-  const extensions = ['.rt']
-  const loader = loaderCreator(opts)
-
-  extensions.forEach(ext => { require.extensions[ext] = loader })
-}
+  const loader = loaderCreator(opts);
+  ['.rt'].forEach(ext => {
+    require.extensions[ext] = loader;
+  });
+};

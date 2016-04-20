@@ -1,3 +1,3 @@
-import register from '.'
+import register from '.';
 
-register({ modules: 'amd' })
+register({ modules: 'amd' });

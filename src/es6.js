@@ -1,3 +1,3 @@
-import register from '.'
+import register from '.';
 
-register({ modules: 'es6' })
+register({ modules: 'es6' });
