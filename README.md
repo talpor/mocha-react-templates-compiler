@@ -24,7 +24,11 @@ Defaults to `es6`.
 
 ## Changelog
 
-## 2.0.0
+### 2.0.1
+
+* Minor bugfixes
+
+### 2.0.0
 
 * Adds the possibility of using different `modules` flag for react-templates.
 
