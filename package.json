@@ -8,7 +8,7 @@
   ],
   "main": "dist/es6.js",
   "scripts": {
-    "lint": "eslint src/ tests/",
+    "lint": "eslint .",
     "test": "mocha --compilers js:babel-register --recursive test/",
     "release": "rm -rf dist && mkdir dist && babel src -d dist",
     "build": "npm run lint && npm run release && npm test",
