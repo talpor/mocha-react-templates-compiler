@@ -2,6 +2,10 @@
   "name": "mocha-react-templates-compiler",
   "version": "1.0.0",
   "description": "react-templates compiler for mocha test framework",
+  "contributors": [
+    "Max Rondón <mrondon@talpor.com>",
+    "Daniel Barreto <dbarreto@talpor.com>"
+  ],
   "main": "dist/es6.js",
   "scripts": {
     "lint": "eslint src/ tests/",
