@@ -4,7 +4,7 @@ import reactTemplates from 'react-templates/src/reactTemplates';
 const babel = require('babel-core');
 const orig = require.extensions['.js'];
 
-const loaderCreator = opts => (module, filename) => {
+export const loaderCreator = opts => (module, filename) => {
   if (filename.indexOf('node_modules') >= 0)
     return orig(module, filename);
 
