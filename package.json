@@ -11,7 +11,8 @@
     "lint": "eslint src/ tests/",
     "test": "echo \"Error: no test specified\" && exit 1",
     "release": "rm -rf dist && mkdir dist && babel src -d dist",
-    "build": "npm run lint && npm run release"
+    "build": "npm run lint && npm run release",
+    "prepublish": "npm run release"
   },
   "repository": {
     "type": "git",
