@@ -2,7 +2,6 @@
 
 import chai from 'chai'
 import fs from 'fs'
-import mock from 'mock-require'
 import reactTemplates from 'react-templates/src/reactTemplates'
 import sinon from 'sinon'
 
