@@ -9,9 +9,9 @@
   "main": "dist/es6.js",
   "scripts": {
     "lint": "eslint src/ tests/",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "mocha --compilers js:babel-register --recursive test/",
     "release": "rm -rf dist && mkdir dist && babel src -d dist",
-    "build": "npm run lint && npm run release",
+    "build": "npm run lint && npm run release && npm test",
     "prepublish": "npm run release"
   },
   "repository": {
