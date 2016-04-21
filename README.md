@@ -24,9 +24,9 @@ Defaults to `es6`.
 
 ## Changelog
 
-### 2.0.1
+### 2.1.0
 
-* Minor bugfixes
+* Important bugfixes.
 
 ### 2.0.0
 
