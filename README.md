@@ -24,6 +24,10 @@ Defaults to `es6`.
 
 ## Changelog
 
+### 2.1.1
+
+* Updated to work with the latest `react-template` version.
+
 ### 2.1.0
 
 * Important bugfixes.
